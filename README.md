@@ -64,6 +64,14 @@ android {
 }
 ```
 
+If the above snippet doesn't work, replace it with:
+
+```
+packagingOptions {
+	resources.excludes.add("META-INF/*")
+}
+```
+
 ## Usage
 
 ```javascript
